@@ -56,11 +56,11 @@ const Navbar = () => {
                 {/* <Logo /> */}
                 <Image
                   src="/images/wedding_ring.png"
-                  alt="Auxano 2025 Logo"
+                  alt="MimS 2026 Logo"
                   width={40}
                   height={40}
                 />
-                <h3 className="text-2xl font-bold">Auxano 2025</h3>
+                <h3 className="text-2xl font-bold">MimS 2026</h3>
               </Link>
 
               <button

@@ -16,7 +16,7 @@ export default function HeroSection() {
   });
 
   useEffect(() => {
-    const weddingDate = new Date("2025-11-22T00:00:00").getTime();
+    const weddingDate = new Date("2026-05-09T00:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -104,7 +104,7 @@ export default function HeroSection() {
                   className="object-contain"
                 />
                 <p className="ml-2 text-sm font-semibold text-muted-foreground">
-                  Nonso & Adanna
+                  Miracle & Shalom
                 </p>
               </motion.div>
               <motion.div 
@@ -114,12 +114,12 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
                 <h1 className="text-6xl sm:text-8xl md:text-7xl lg:text-8xl font-gothic font-light text-gradient mb-2">
-                  Nonso & Adanna
+                  Miracle & Shalom
                 </h1>
                 <div className="flex items-center justify-center md:justify-start gap-3 mt-4">
                   <div className="h-px w-12 bg-linear-to-r from-transparent to-yellow-600"></div>
                   <p className="text-base md:text-lg lg:text-xl tracking-widest text-gray-300 uppercase">
-                    November 22, 2025
+                    May 09, 2026
                   </p>
                   <div className="h-px w-12 bg-linear-to-l from-transparent to-yellow-600"></div>
                 </div>

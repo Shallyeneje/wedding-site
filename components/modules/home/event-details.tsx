@@ -228,7 +228,7 @@ const EventDetails = () => {
             <blockquote className="text-lg sm:text-xl md:text-2xl font-serif italic text-foreground/90 leading-relaxed relative z-10">
               {EventData.toastmessage.trim()}
             </blockquote>
-            <p className="text-sm text-muted-foreground mt-4 relative z-10">— Ruth 1:16</p>
+            <p className="text-sm text-muted-foreground mt-4 relative z-10">—MimS'26</p>
           </div>
         </motion.div>
       </div>

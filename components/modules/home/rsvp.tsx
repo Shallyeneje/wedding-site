@@ -121,7 +121,7 @@ const RSVPSection = () => {
                 </Label>
                 <Select
                   value={formData.attendance}
-                  onValueChange={(value) => handleChange("attendance", value)}
+                  onValueChange={(value) => handleChange("attendance", value ?? "")}
                   required
                 >
                   <SelectTrigger className="h-12">
@@ -144,7 +144,7 @@ const RSVPSection = () => {
                 </Label>
                 <Select
                   value={formData.guests}
-                  onValueChange={(value) => handleChange("guests", value)}
+                  onValueChange={(value) => handleChange("guests", value ?? "")}
                 >
                   <SelectTrigger className="h-12">
                     <SelectValue />

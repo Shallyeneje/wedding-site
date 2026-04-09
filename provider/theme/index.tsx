@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import QueryProvider from "../react-query";
-import { ThemeProvider } from "../theme";
+import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
 
 const Providers: React.FC<{ children: React.ReactNode }> = ({ children }) => {

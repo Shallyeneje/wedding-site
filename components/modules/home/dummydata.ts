@@ -54,25 +54,24 @@ export const GalleryImages = [
   "/images/bento15.jpg",
 ];
 
-export const CoupleNames = "Nonso & Adanna";
+export const CoupleNames = "Miracle & Shalom";
 export const CouplesEmail = "nonsoeneh73@gmail.com";
 
 export const EventDetails = {
-  couple: "Adanna & Chinonso",
-  date: "Saturday, 22nd November 2025",
+  couple: "Shalom & Miracle",
+  date: "Saturday, 9th May 2026",
   time: {
     church: "10:00 AM",
     reception: "1:00 PM",
   },
-  churchVenue:
-    "Calvary Chapel Episcopal House, Bishop’s Court, near All Saints Cathedral, Onitsha.",
+  churchVenue: "Anglican Church of The Good Shepherd,Awada.",
   receptionVenue:
     "Bethel Hall at St. James Anglican Church, Awada (opposite ABS).",
   chiefHost: "✝️ The Lord Jesus Christ",
   rsvpcontacts: ["07063018927", "08083838816", "07031901931"],
-  colorOfTheDay: "🤍 White, 🍷 Burgundy, and 🌸 Blush",
+  colorOfTheDay: "Navy Blue, Burnt Orange and🤍 White",
   toastmessage: `
-“For where you go I will go, and where you lodge I will lodge.
-Your people shall be my people, and your God my God.”
-`,
+“What a blessed priviledge to have what human strength cannot give; the love of God shared between two beautiful hearts. Beating in synchrony, forever to be one.
+
+So, may our home be filled with dancing, joy and peace beyond all comprehension: indeed it will be the house of God.”`,
 };

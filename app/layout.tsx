@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Outfit, Geist } from "next/font/google";
 import "./globals.css";
-import Providers from "@/provider";
+import Providers from "@/provider/theme";
 import { cn } from "@/lib/utils";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
@@ -14,11 +14,11 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Nonso & Adanna's Wedding",
+  title: "Miracle & Shalom's Wedding",
   description:
-    "Join us in celebrating the union of Nonso and Adanna. Explore our wedding website for details on the big day, RSVP, and more.",
+    "Join us in celebrating the union of Miracle and Shalom. Explore our wedding website for details on the big day, RSVP, and more.",
   openGraph: {
-    title: "Nonso & Adanna's Wedding",
+    title: "Miracle & Shalom's Wedding",
     description:
       "Join us in celebrating the union of Nonso and Adanna. Explore our wedding website for details on the big day, RSVP, and more.",
     url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
