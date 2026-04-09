@@ -4,7 +4,7 @@ import "./globals.css";
 import Providers from "@/provider/theme";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],
@@ -33,10 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-  lang="en"
-  suppressHydrationWarning
-  className={cn("font-sans", geist.variable)}
->
+      lang="en"
+      suppressHydrationWarning
+      className={cn("font-sans", geist.variable)}
+    >
       <body className={`${geist.variable} ${ebGaramond.variable} antialiased`}>
         <Providers>{children}</Providers>
       </body>
