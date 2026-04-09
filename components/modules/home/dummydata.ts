@@ -31,20 +31,20 @@ Auxano!
 `;
 
 export const OurStoryImages = [
-  "/images/bento1.jpg",
-  "/images/bento2.jpg",
+  "/images/doc6.jpg",
+  "/images/doc10.png",
   "/images/bento3.jpg",
 ];
 
 export const GalleryImages = [
-  "/images/bento7.jpg",
-  "/images/bento1.jpg",
-  "/images/bento2.jpg",
-  "/images/bento3.jpg",
-  "/images/bento4.jpg",
-  "/images/bento5.jpg",
-  "/images/bento6.jpg",
-  "/images/bento8.jpg",
+  "/images/doc5.jpg",
+  "/images/doc4.jpg",
+  "/images/doc6.jpg",
+  "/images/doc8.jpg",
+  "/images/doc9.jpg",
+  "/images/doc10.png",
+  "/images/doc10.png",
+  "/images/doc9.jpg",
   "/images/bento9.jpg",
   "/images/bento10.jpg",
   "/images/bento11.jpg",
@@ -68,10 +68,9 @@ export const EventDetails = {
   receptionVenue:
     "Bethel Hall at St. James Anglican Church, Awada (opposite ABS).",
   chiefHost: "✝️ The Lord Jesus Christ",
-  rsvpcontacts: ["07063018927", "08083838816", "07031901931"],
-  colorOfTheDay: "Navy Blue, Burnt Orange and🤍 White",
+  rsvpcontacts: ["08167628515", "08037317408", "08030957409"],
+  colorOfTheDay: "🟦Navy Blue, 🟧Burnt Orange and 🤍White",
   toastmessage: `
 “What a blessed priviledge to have what human strength cannot give; the love of God shared between two beautiful hearts. Beating in synchrony, forever to be one.
-
 So, may our home be filled with dancing, joy and peace beyond all comprehension: indeed it will be the house of God.”`,
 };
