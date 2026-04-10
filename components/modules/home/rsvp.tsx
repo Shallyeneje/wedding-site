@@ -58,7 +58,7 @@ const RSVPSection = () => {
           </h2>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
             We would be honored by your presence as we celebrate our special day.
-            Please RSVP by November 15, 2025.
+            Please RSVP by May 2, 2026.
           </p>
         </div>
 
@@ -160,7 +160,7 @@ const RSVPSection = () => {
               </div>
             </div>
 
-            {/* Dietary Restrictions */}
+            {/* Dietary Restrictions
             <div className="space-y-2">
               <Label htmlFor="dietary" className="text-lg font-medium">
                 Dietary Restrictions or Allergies
@@ -175,7 +175,7 @@ const RSVPSection = () => {
                 }
                 className="h-12"
               />
-            </div>
+            </div> */}
 
             {/* Message */}
             <div className="space-y-2">
@@ -207,7 +207,7 @@ const RSVPSection = () => {
           <p className="text-sm">
             Having trouble? Contact us at{" "}
             <a
-              href="mailto:wedding@nonsoandadanna.com"
+              href="mailto:wedding@miracleandshalom.com"
               className="text-white underline hover:text-gray-300"
             >
               {CouplesEmail}

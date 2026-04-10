@@ -32,8 +32,9 @@ Auxano!
 
 export const OurStoryImages = [
   "/images/doc6.jpg",
-  "/images/doc10.png",
-  "/images/bento3.jpg",
+  "/images/doc17.jpg",
+  "/images/doc16.jpg",
+  // "/images/bento3.jpg",
 ];
 
 export const GalleryImages = [
@@ -45,17 +46,17 @@ export const GalleryImages = [
   "/images/doc10.png",
   "/images/doc10.png",
   "/images/doc9.jpg",
-  "/images/bento9.jpg",
-  "/images/bento10.jpg",
-  "/images/bento11.jpg",
-  "/images/bento12.jpg",
+  "/images/doc16.jpg",
+  "/images/doc17.jpg",
+  "/images/doc11.jpeg",
+  "/images/doc12.jpeg",
   "/images/bento13.jpg",
   "/images/bento14.jpg",
   "/images/bento15.jpg",
 ];
 
 export const CoupleNames = "Miracle & Shalom";
-export const CouplesEmail = "nonsoeneh73@gmail.com";
+export const CouplesEmail = "miraguinem.1021@gmail.com";
 
 export const EventDetails = {
   couple: "Shalom & Miracle",

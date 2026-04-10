@@ -153,11 +153,11 @@ const OurStorySection = () => {
                 transition={{ duration: 0.6, delay: 0.7 }}
               >
                 <Image
-                  src={OurStoryImages[2]}
-                  alt="Our story image 3"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
+  src={OurStoryImages[2]}
+  alt="Our story image 3"
+  fill
+  className="object-cover object-[center_25%] scale-100 hover:scale-105 transition-transform duration-500"
+/>
               </motion.div>
             </div>
           </div>

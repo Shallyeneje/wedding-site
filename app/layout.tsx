@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Miracle & Shalom's Wedding",
     description:
-      "Join us in celebrating the union of Nonso and Adanna. Explore our wedding website for details on the big day, RSVP, and more.",
+      "Join us in celebrating the union of Miracle and Shalom. Explore our wedding website for details on the big day, RSVP, and more.",
     url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-    siteName: "Nonso & Adanna's Wedding",
+    siteName: "Miracle & Shalom's Wedding",
   },
 };
 
