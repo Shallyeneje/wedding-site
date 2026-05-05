@@ -1,33 +1,33 @@
 export const OurStory = `
-Our story is that which clearly depicts that God is always intentional with his children and their relationships too. 
-We didn't plan to meet each other, we didn't have anything to connect us together, we met at a time when we were both not thinking of any relationship at all.
+Well, our story shows the Providence of God; how that God works situations and circumstances to meet desired outcomes for His people.
 
-We have a popular saying amongst ourselves that said thus;
-"God is the one who is writing our script, he started it, he will surely make all things beautiful in his time."
+We met in January/February 2023.
+Well, you could say we didn't actually "meet".
+It was just a group of brethren who came to greet the brother (Miracle), and they had come with some tag-along brethren, of whom Shalom was among.
 
-We met in January 19th 2021 for the first time and from that day, our connection looked so divine and we didn't struggle to accept each other's friendship and company. We started as just good friends, we only officially became lovers 2 years later.
+No proper hello, no exchange of contacts.
+No retention of names, nothing.
+Well, until the last quarter of the year.
+That was when names were retained, contact numbers exchanged.
+Then one talk to another, and another; and here we are today 
 
-Within these years, it was one of the most beautiful and genuine friendships we had ever experienced. It was so pure that it resulted in our exponential growth in all ramifications. 
-We are a proof that real relationships do not affect your walk with God but rather help it become better.
+From one level, stage to another.
+Family and quickly got involved and the journey has been that intentional from the start. Of course, church authority too.
 
-We kept our relationship private from everyone until when we knew we wanted to marry each other. It was not a secret friendship but a very private and conservative one.
+It was private and not secret.
+Everyone who should know, knew.
 
-We made God the "umpire" of our Relationship and his word our absolute authority. Nothing was allowed to jeopardize this resolution at all.
+We have learnt quite some things, by experience, by counsel and by doctrine.
+We're a lot better than when we met, and more understanding and compassionate humans, at least from each others' point of view.
+God ultimately, is the judge of all.
 
-We didn't do relationship the popular way, everything just flowed naturally and genuinely. 
-No public proposal or dramatic proposals, we knew our hearts were beating for one another, we just let everything flow and we started involving our loved ones and leaders. They all approved it and gave their consent.
+By the grace of God, we are getting married; trusting that God Who sparked this desire in the hearts of the both of us, will work out His full intentions all our lives as we flesh out this union, by His strength.
 
-We have both learned that relationship can be done God's way and that the values of the Kingdom of God can be seen in a romantic relationship.
+We pray for wisdom beyond our years, strength beyond our frame, and hearts always ready to be used of the Lord to bless; and children who will be God's men, through and through.
+Amen 
 
-We are getting married to continue growing in God's purpose for our lives. The mandate of God upon us is the major driving force for this union.
-We believe that our union will bring about exponential growth and increase for us, the work of God in our care, and everyone under our leadership. Hence the caption "Auxano".
-
-We pray that God will continue to guide us and strengthen us for the journey ahead. 
-Thank you for agreeing to support us as we do this together. 
-
-Finally, Nonso loves Adanna deeply and Adanna loves Nonso unapologetically.
-
-Auxano!
+Conclusively, MimS 2026 is about two persons whom, the each considers the other, the absolute love of their lives.
+Unapologetically.
 `;
 
 export const OurStoryImages = [
@@ -48,11 +48,9 @@ export const GalleryImages = [
   "/images/doc9.jpg",
   "/images/doc16.jpg",
   "/images/doc17.jpg",
-  "/images/doc11.jpeg",
+  // "/images/doc11.jpeg",
   "/images/doc12.jpeg",
-  "/images/bento13.jpg",
-  "/images/bento14.jpg",
-  "/images/bento15.jpg",
+  
 ];
 
 export const CoupleNames = "Miracle & Shalom";

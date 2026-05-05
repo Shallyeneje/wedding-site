@@ -20,7 +20,17 @@ const EventDetails = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <section ref={ref} id="event-details" className="py-20 bg-muted/30">
+    <section ref={ref} id="event-details" 
+    // className="py-20 bg-muted/30"
+    className="relative py-24 text-gray-200 overflow-hidden"
+style={{
+  background: `
+    radial-gradient(circle at 20% 20%, rgba(200,170,120,0.06), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(30,60,120,0.35), transparent 55%),
+    radial-gradient(circle at 50% 100%, rgba(10,15,31,0.95), transparent 60%),
+    #070b17
+  `,
+}}>
       <div className="max-w-[95%] md:max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -54,10 +64,10 @@ const EventDetails = () => {
         </div>
 
         {/* Main Event Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 items-stretch">
           {/* Church Ceremony Card */}
           <motion.div 
-            className="bg-background rounded-3xl p-6 sm:p-8 shadow-lg border border-border hover:shadow-xl transition-shadow"
+            className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-black/5 hover:shadow-2xl transition duration-300"
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -66,12 +76,12 @@ const EventDetails = () => {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Church className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold">Church Ceremony</h3>
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900">Church Ceremony</h3>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <Calendar className="w-5 h-5 text-muted-foreground mt-1 shrink-0" />
+                <Calendar className="w-5 h-5 text-gray-600 mt-1 shrink-0" />
                 <div>
                   <p className="font-semibold text-sm sm:text-base">Date</p>
                   <p className="text-sm sm:text-base text-muted-foreground">{EventData.date}</p>
@@ -98,7 +108,7 @@ const EventDetails = () => {
 
           {/* Reception Card */}
           <motion.div 
-            className="bg-background rounded-3xl p-6 sm:p-8 shadow-lg border border-border hover:shadow-xl transition-shadow"
+            className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-black/5 hover:shadow-2xl transition duration-300"
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -107,12 +117,12 @@ const EventDetails = () => {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <PartyPopper className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold">Reception</h3>
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900">Reception</h3>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <Calendar className="w-5 h-5 text-muted-foreground mt-1 shrink-0" />
+                <Calendar className="w-5 h-5 text-gray-600 mt-1 shrink-0" />
                 <div>
                   <p className="font-semibold text-sm sm:text-base">Date</p>
                   <p className="text-sm sm:text-base text-muted-foreground">{EventData.date}</p>

@@ -14,14 +14,25 @@ const GallerySection = () => {
   const remaining = GalleryImages.slice(6);
 
   return (
-    <section className="py-24 bg-background text-foreground">
+    // <section className="py-24 bg-background text-foreground">
+    <section
+      className="relative py-24 overflow-hidden text-gray-200"
+      style={{
+        background: `
+      radial-gradient(circle at 20% 20%, rgba(200,170,120,0.06), transparent 45%),
+      radial-gradient(circle at 80% 70%, rgba(30,60,120,0.35), transparent 55%),
+      radial-gradient(circle at 50% 100%, rgba(10,15,31,0.95), transparent 60%),
+      #070b17
+    `,
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold tracking-[0.08em] mb-4">
+          <h2 className="text-5xl md:text-6xl font-serif font-light tracking-[0.03em] mb-4 text-gray-300">
             Our Gallery
           </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto"></p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A glimpse into our beautiful journey together
           </p>
@@ -29,7 +40,6 @@ const GallerySection = () => {
 
         {/* 💎 LUXURY LAYOUT */}
         <div className="grid md:grid-cols-2 gap-6">
-
           {/* HERO IMAGE */}
           <motion.div
             className="relative h-125 md:h-162.5 rounded-3xl overflow-hidden cursor-pointer group"
@@ -47,8 +57,8 @@ const GallerySection = () => {
             />
 
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-80" />
-
+            {/* <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-80" /> */}
+            <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
             {/* Glow */}
             <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 blur-2xl transition duration-500" />
 
@@ -88,13 +98,28 @@ const GallerySection = () => {
         {/* 💫 SEE MORE */}
         {remaining.length > 0 && !showAll && (
           <div className="text-center mt-14">
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               onClick={() => setShowAll(true)}
               className="px-10 py-6 text-base tracking-wide hover:bg-primary hover:text-white transition-all"
             >
               View Full Gallery ({remaining.length}+)
+            </Button> */}
+            <Button
+              size="lg"
+              onClick={() => setShowAll(true)}
+              className="relative px-10 py-6 text-base tracking-wide bg-white/5 backdrop-blur-xl border border-white/10 text-gray-200 hover:bg-white/10 transition-all duration-300 overflow-hidden group"
+            >
+              <span className="relative z-10">
+                View Full Gallery ({remaining.length}+)
+              </span>
+
+              {/* subtle gold glow */}
+              <div className="absolute inset-0 bg-linear-to-r from-[#c8aa78]/10 via-transparent to-[#1a2a4a]/10 opacity-0 group-hover:opacity-100 transition duration-500" />
+
+              {/* soft shine sweep */}
+              <div className="absolute -inset-1 bg-linear-to-r from-transparent via-white/10 to-transparent skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition duration-1000" />
             </Button>
           </div>
         )}
@@ -156,7 +181,6 @@ const GallerySection = () => {
             </motion.div>
           )}
         </AnimatePresence>
-
       </div>
     </section>
   );

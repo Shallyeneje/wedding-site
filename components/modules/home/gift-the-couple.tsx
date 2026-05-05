@@ -15,10 +15,18 @@ const GiftTheCouple = () => {
     <section
       ref={ref}
       id="gift-the-couple"
-      className="py-28 bg-background text-foreground relative overflow-hidden"
+      className="relative py-28 overflow-hidden text-gray-200"
+      style={{
+        background: `
+    radial-gradient(circle at 20% 30%, rgba(200,170,120,0.06), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(30,60,120,0.35), transparent 55%),
+    radial-gradient(circle at 50% 100%, rgba(10,15,31,0.95), transparent 60%),
+    #070b17
+  `,
+      }}
+      // className="py-28 bg-background text-foreground relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 relative">
-
         {/* 💎 IMAGE BACKDROP */}
         <motion.div
           className="relative h-125 md:h-150 rounded-3xl overflow-hidden"
@@ -42,13 +50,14 @@ const GiftTheCouple = () => {
 
         {/* 💎 FLOATING CONTENT CARD */}
         <motion.div
-          className="relative md:absolute md:bottom-20 md:left-1/2 md:-translate-x-1/2 w-full md:w-[80%] lg:w-[65%] mt-10 md:mt-5"
+          className="relative md:absolute md:bottom-10 md:left-1/2 md:-translate-x-1/2 w-full md:w-[80%] lg:w-[65%] mt-10 md:mt-5"
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="bg-white/80 dark:bg-black/60 backdrop-blur-xl border border-white/20 rounded-3xl p-8 md:p-10 shadow-2xl space-y-6">
-
+          <div className="bg-linear-to-br from-[#0b1020]/80 via-[#0a0f1f]/70 to-[#070b17]/90
+backdrop-blur-2xl
+border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl space-y-6">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10">
               <Gift className="w-4 h-4 text-primary" />
@@ -64,14 +73,13 @@ const GiftTheCouple = () => {
 
             {/* Text */}
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Your presence at our wedding is the greatest gift of all.
-              However, if you wish to honor us, we’ve created a simple way
-              to support our journey together.
+              Your presence at our wedding is the greatest gift of all. However,
+              if you wish to honor us, we’ve created a simple way to support our
+              journey together.
             </p>
 
             {/* Info Blocks */}
             <div className="grid sm:grid-cols-2 gap-6 pt-4">
-              
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <CreditCard className="w-5 h-5 text-primary" />
@@ -95,7 +103,6 @@ const GiftTheCouple = () => {
                   </p>
                 </div>
               </div>
-
             </div>
 
             {/* CTA */}
@@ -103,7 +110,8 @@ const GiftTheCouple = () => {
               <Button
                 asChild
                 size="lg"
-                className="px-10 py-6 text-base tracking-wide w-full sm:w-auto"
+                className="relative px-10 py-6 text-base tracking-wide bg-white/5 backdrop-blur-xl border border-white/10 text-gray-200 overflow-hidden group hover:bg-white/10 transition-all duration-300"
+                // className="px-10 py-6 text-base tracking-wide w-full sm:w-auto"
               >
                 <Link href="/payments">
                   <Gift className="w-5 h-5" />
@@ -117,7 +125,6 @@ const GiftTheCouple = () => {
             </div>
           </div>
         </motion.div>
-
       </div>
 
       {/* Spacer for overlap */}
@@ -145,7 +152,7 @@ export default GiftTheCouple;
 //       <div className="max-w-6xl mx-auto px-6">
 //         <div className="grid md:grid-cols-2 gap-12 items-center">
 //           {/* Left Side - Image */}
-//           <motion.div 
+//           <motion.div
 //             className="relative h-100 sm:h-125 rounded-3xl overflow-hidden"
 //             initial={{ opacity: 0, x: -30 }}
 //             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
@@ -158,7 +165,7 @@ export default GiftTheCouple;
 //               className="object-cover"
 //             />
 //             <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
-            
+
 //             {/* Overlay Content */}
 //             <div className="absolute bottom-8 left-8 right-8 text-white">
 //               <div className="flex items-center gap-2 mb-3">
@@ -175,7 +182,7 @@ export default GiftTheCouple;
 
 //           {/* Right Side - Content */}
 //           <div className="space-y-6">
-//             <motion.div 
+//             <motion.div
 //               className="inline-flex items-center gap-2 px-4 py-2 bg-pink-100 dark:bg-pink-950 rounded-full"
 //               initial={{ opacity: 0, y: 20 }}
 //               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -187,7 +194,7 @@ export default GiftTheCouple;
 //               </span>
 //             </motion.div>
 
-//             <motion.h2 
+//             <motion.h2
 //               className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
 //               initial={{ opacity: 0, y: 20 }}
 //               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -196,7 +203,7 @@ export default GiftTheCouple;
 //               Gift the Couple
 //             </motion.h2>
 
-//             <motion.p 
+//             <motion.p
 //               className="text-base sm:text-lg text-muted-foreground leading-relaxed"
 //               initial={{ opacity: 0 }}
 //               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
@@ -207,7 +214,7 @@ export default GiftTheCouple;
 //               for you to contribute to our new life together.
 //             </motion.p>
 
-//             <motion.div 
+//             <motion.div
 //               className="bg-card border border-border rounded-2xl p-6 space-y-4"
 //               initial={{ opacity: 0, y: 20 }}
 //               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -244,7 +251,7 @@ export default GiftTheCouple;
 //               </div>
 //             </motion.div>
 
-//             <motion.div 
+//             <motion.div
 //               className="pt-4"
 //               initial={{ opacity: 0, y: 20 }}
 //               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -256,7 +263,7 @@ export default GiftTheCouple;
 //                   <span>Send a Gift</span>
 //                 </Link>
 //               </Button>
-              
+
 //               <p className="text-sm text-muted-foreground mt-4">
 //                 Secure payment processing • All major payment methods accepted
 //               </p>
